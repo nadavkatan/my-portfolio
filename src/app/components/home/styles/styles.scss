@@ -1,0 +1,22 @@
+.home-container{
+    width: 90%;
+    background-color: #1D1D1D;
+    height:100vh;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    .nadav-avatar{
+        width: auto;
+        height:18em;
+        margin-top:3em;
+        border-radius: 50%;
+        box-shadow: 0 0 9px 1px grey;
+    }
+    .icons-container{
+        margin-top:4em;
+        width:20%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

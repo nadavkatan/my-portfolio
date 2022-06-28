@@ -1,0 +1,12 @@
+.letters-container{
+    font-size:2.6em;
+    display:flex;
+    width:1.6em;
+    .blue-letter{
+        color:#0DFDD7;
+    }
+    .red-letter{
+        color:red;
+        transform: translateX(-50px);
+    }
+}
