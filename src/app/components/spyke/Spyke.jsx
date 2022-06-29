@@ -7,7 +7,7 @@ import shira from "../../assets/images/shira.JPG";
 import "./styles/styles.css";
 import { Fab } from "@mui/material";
 
-const Project = () => {
+const Spyke = () => {
   return (
     <Paper elevation={3} className="project-card">
       <Avatar src={shira} sx={{ width: 150, height: 150 }} />
@@ -40,4 +40,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Spyke;
