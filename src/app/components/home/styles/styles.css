@@ -1,8 +1,13 @@
-.home-container {
-  width: 90%;
+.home-wrapper {
+  width: 100%;
   background-color: #1D1D1D;
   height: 100vh;
+}
+
+.home-wrapper .home-container {
   float: right;
+  width: 90%;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,16 +20,25 @@
           align-items: center;
 }
 
-.home-container .nadav-avatar {
+.home-wrapper .home-container .nadav-avatar {
   width: auto;
   height: 18em;
   margin-top: 3em;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 9px 1px grey;
           box-shadow: 0 0 9px 1px grey;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
-.home-container .icons-container {
+.home-wrapper .home-container .nadav-avatar:hover {
+  height: 19em;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(2px 2px 20px red);
+          filter: drop-shadow(2px 2px 20px red);
+}
+
+.home-wrapper .home-container .icons-container {
   margin-top: 4em;
   width: 20%;
   display: -webkit-box;
@@ -32,4 +46,13 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.home-wrapper .home-container .icons-container .icon {
+  cursor: pointer;
+}
+
+.home-wrapper .home-bg-wrapper {
+  position: absolute;
+  z-index: 0;
 }

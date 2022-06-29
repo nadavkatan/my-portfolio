@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Greeting from "../greeting/Greeting";
-import Navbar from "../navbar/Navbar";
-import nadav from "../../assets/images/nadav.jpg";
+import BackgroundHome from '../backgroundHome/BackgroundHome';
+import nadav from "../../assets/images/facebook-profile.jpeg";
 import "./styles/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -20,38 +20,70 @@ const Home = () => {
   library.add(faCheckSquare, faCoffee, faGithub, faLinkedinIn, faFacebookF);
 
   return (
+    <div className="home-wrapper">
+    {/* <div className="home-bg-wrapper"> */}
+    <BackgroundHome/>
+    {/* </div> */}
     <div className="home-container">
+
       <Greeting />
       <img src={nadav} className="nadav-avatar" alt="nadav-avatar" />
       <div className="icons-container">
-        <FontAwesomeIcon
-          color="white"
-          size="2x"
-          name="github"
-          icon={["fab", "github"]}
-          onMouseOver={() => setGithubHovered(true)}
-          onMouseLeave={() => setGithubHovered(false)}
-          bounce={githubHovered}
-        />
-        <FontAwesomeIcon
-          color="white"
-          size="2x"
-          name="linkedIn"
-          icon={["fab", "linkedin-in"]}
-          onMouseOver={() => setLinkedInHovered(true)}
-          onMouseLeave={() => setLinkedInHovered(false)}
-          bounce={linkedInHovered}
-        />
-        <FontAwesomeIcon
-          color="white"
-          size="2x"
-          name="facebook"
-          icon={["fab", "facebook-f"]}
-          onMouseOver={() => setFacebokkHovered(true)}
-          onMouseLeave={() => setFacebokkHovered(false)}
-          bounce={facebokkHovered}
-        />
+        <div className="icon">
+          <a
+            href="https://github.com/nadavkatan"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              color={githubHovered ? "#0DFDD7" : "white"}
+              size="2x"
+              name="github"
+              icon={["fab", "github"]}
+              onMouseOver={() => setGithubHovered(true)}
+              onMouseLeave={() => setGithubHovered(false)}
+              bounce={githubHovered}
+            />
+          </a>
+        </div>
+        <div className="icon">
+          <a
+            href="https://www.linkedin.com/in/nadav-katan-5914661b7/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              color={linkedInHovered ? "#0DFDD7" : "white"}
+              size="2x"
+              name="linkedIn"
+              icon={["fab", "linkedin-in"]}
+              onMouseOver={() => setLinkedInHovered(true)}
+              onMouseLeave={() => setLinkedInHovered(false)}
+              bounce={linkedInHovered}
+            />
+          </a>
+        </div>
+        <div className="icon">
+          <a
+            href="https://www.facebook.com/nadav.katan/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              color={facebokkHovered ? "#0DFDD7" : "white"}
+              size="2x"
+              name="facebook"
+              icon={["fab", "facebook-f"]}
+              onMouseOver={() => setFacebokkHovered(true)}
+              onMouseLeave={() => setFacebokkHovered(false)}
+              bounce={facebokkHovered}
+            />
+          </a>
+        </div>
       </div>
+
+    </div>
+
     </div>
   );
 };

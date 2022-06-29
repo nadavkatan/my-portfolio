@@ -1,0 +1,15 @@
+.projects-stripe-container {
+  float: right;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3em;
+  background-color: #1D1D1D;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}

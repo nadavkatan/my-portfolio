@@ -1,0 +1,25 @@
+.project-specs-container {
+  width: 30%;
+}
+
+.project-specs-container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.project-specs-container .title .title-letters {
+  color: white;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+  margin-left: -0.2em;
+}
+
+.project-specs-container .subtitle .subtitle-text {
+  color: white;
+  line-height: 2em;
+  font-size: 1em;
+}

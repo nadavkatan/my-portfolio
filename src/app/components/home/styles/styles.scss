@@ -1,22 +1,42 @@
-.home-container{
-    width: 90%;
+.home-wrapper{
+    width: 100%;
     background-color: #1D1D1D;
     height:100vh;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    .nadav-avatar{
-        width: auto;
-        height:18em;
-        margin-top:3em;
-        border-radius: 50%;
-        box-shadow: 0 0 9px 1px grey;
-    }
-    .icons-container{
-        margin-top:4em;
-        width:20%;
+    // float: right;
+    .home-container{
+        float: right;
+        width:90%;
+        z-index: 10;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items:center;
+    
+        .nadav-avatar{
+            width: auto;
+            height:18em;
+            margin-top:3em;
+            border-radius: 50%;
+            box-shadow: 0 0 9px 1px grey;
+            transition: 1s all;
+            &:hover{
+                height:19em;
+                cursor: pointer;
+                filter: drop-shadow(2px 2px 20px red); 
+                }
+        }
+        .icons-container{
+            margin-top:4em;
+            width:20%;
+            display: flex;
+            justify-content: space-around;
+            .icon{
+                cursor: pointer;
+            }
+        }
+    }
+    .home-bg-wrapper{
+        position:absolute;
+        z-index: 0;
     }
 }
+
