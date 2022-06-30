@@ -6,17 +6,17 @@ import "./styles/styles.css";
 
 const Shilo = () => {
   return (
-    <Paper class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
+    <Paper className="flip-card">
+      <div className="flip-card-inner">
+        <div className="flip-card-front">
           <div className="front-text">
             <Typography variant="h5" color="white" align="center">
-              Who composed the musical masterpiece 'Das Wohltemperierte
-              Klavier'?
+              Who composed the musical masterpiece <em>'Das Wohltemperierte
+              Klavier'?</em>
             </Typography>
           </div>
         </div>
-        <div class="flip-card-back">
+        <div className="flip-card-back">
           <a
             href="https://github.com/nadavkatan/Shilo"
             target="_blank"

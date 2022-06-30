@@ -1,0 +1,101 @@
+.earpong-container {
+  width: 20em;
+  height: 30em;
+  position: relative;
+  background-color: black !important;
+  -webkit-box-shadow: 0 0 9px 1px grey !important;
+          box-shadow: 0 0 9px 1px grey !important;
+  -webkit-transition: 1s all !important;
+  transition: 1s all !important;
+  overflow: hidden;
+}
+
+.earpong-container:hover {
+  -webkit-filter: drop-shadow(2px 2px 20px yellow);
+          filter: drop-shadow(2px 2px 20px yellow);
+  cursor: pointer;
+}
+
+.earpong-container::before {
+  content: " ";
+  position: absolute;
+  height: 40em;
+  width: 10em;
+  top: -70px;
+  left: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(#0DFDD7));
+  background: linear-gradient(red, #0DFDD7);
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
+}
+
+.earpong-container .earpong-card-content {
+  color: white;
+  position: absolute;
+  background-color: black;
+  inset: 3px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.earpong-container .earpong-card-content .earpong-avatar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4em;
+}
+
+.earpong-container .earpong-card-content .earpong-avatar-container .earpong-avatar {
+  width: 15em;
+  height: auto;
+}
+
+.earpong-container .earpong-card-content .sound-btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

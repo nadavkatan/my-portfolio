@@ -12,7 +12,7 @@ const Greeting = () => {
     <div className="header-text">
         {headerText.split("").map((letter, i) => {
           if (letter === " ") return <span key={i} style={{ width: "1em" }} />;
-          if (letter === "N") return <StyledLetter key={i} letter="N" />;
+          if (letter === "N") return <StyledLetter key={i} letter="N" transform={-50}/>;
           return (
             <h1 key={i} className="header-letter">
               {letter}

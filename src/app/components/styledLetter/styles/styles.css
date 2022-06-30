@@ -12,6 +12,4 @@
 
 .letters-container .red-letter {
   color: red;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
 }
