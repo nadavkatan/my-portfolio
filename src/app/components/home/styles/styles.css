@@ -8,6 +8,7 @@
   float: right;
   width: 100%;
   z-index: 10;
+  background-color: #1D1D1D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +54,65 @@
 }
 
 .home-wrapper .home-bg-wrapper {
+  position: absolute;
+  z-index: 0;
+}
+
+.sm-screen-home-wrapper {
+  width: 100%;
+  background-color: #1D1D1D;
+}
+
+.sm-screen-home-wrapper .home-container {
+  float: right;
+  width: 100%;
+  z-index: 10;
+  background-color: #1D1D1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sm-screen-home-wrapper .home-container .nadav-avatar {
+  width: auto;
+  height: 18em;
+  margin-top: 3em;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 9px 1px grey;
+          box-shadow: 0 0 9px 1px grey;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.sm-screen-home-wrapper .home-container .nadav-avatar:hover {
+  height: 19em;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(2px 2px 20px red);
+          filter: drop-shadow(2px 2px 20px red);
+}
+
+.sm-screen-home-wrapper .home-container .icons-container {
+  margin-top: 4em;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sm-screen-home-wrapper .home-container .icons-container .icon {
+  cursor: pointer;
+}
+
+.sm-screen-home-wrapper .home-bg-wrapper {
   position: absolute;
   z-index: 0;
 }

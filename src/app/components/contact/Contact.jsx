@@ -10,6 +10,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BackgroundHome from "../backgroundHome/BackgroundHome";
+import { useMediaQuery } from "@mui/material";
 
 const CssTextField = withStyles({
   root: {
@@ -42,6 +43,7 @@ const CssTextField = withStyles({
 
 const Contact = () => {
   const form = useRef();
+  const isSmallScreen = useMediaQuery(theme=> theme.breakpoints.down("md"));
 
   const {
     register,
@@ -70,7 +72,7 @@ const Contact = () => {
   };
 
   return (
-    <Box className="contact-container">
+    <Box className={isSmallScreen? "sm-screen-contact-container": "contact-container"}>
           {/* <BackgroundHome /> */}
       <ToastContainer />
       <Typography variant="h1" color="white" className="contact-heading">

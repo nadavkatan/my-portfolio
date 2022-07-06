@@ -7,15 +7,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    .contact-heading{
+        font-size: 5em;
+        width: 80%;
+    }
     .contact-form{
         width: 80%;
-        .contact-textarea{
-            background-color: 'yellow!important';
-        }
+    }
+}
+
+
+.sm-screen-contact-container{
+    width: 100%;
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contact-heading{
+        font-size: 3em;
+        width: 80%;
+    }
+    .contact-form{
+        width: 80%;
     }
 }
 .contact-heading{
     font-size: 3em;
     width: 80%;
 }
+

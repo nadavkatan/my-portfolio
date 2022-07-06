@@ -24,7 +24,7 @@ const Home = () => {
 
 
   return (
-    <div className="home-wrapper">
+    <div className={isSmallScreen ? "sm-screen-home-wrapper" : "home-wrapper"}>
     <BackgroundHome/>
     <div className="home-container">
     {isSmallScreen && <Drawer/>}
