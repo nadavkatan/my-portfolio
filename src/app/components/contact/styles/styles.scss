@@ -1,0 +1,16 @@
+.contact-container{
+    width: 90%;
+    height: 100vh;
+    float: right;
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contact-form{
+        width: 80%;
+        .contact-textarea{
+            background-color: 'yellow!important';
+        }
+    }
+}
