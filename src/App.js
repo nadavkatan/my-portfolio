@@ -11,21 +11,22 @@ function App() {
   const theme = createTheme({});
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
+
   return (
     <ThemeProvider theme={theme}>
       <div className="app-container">
         {!isSmallScreen && <Navbar />}
-        <Box className={isSmallScreen ? "sm-screen-section" : "section"}>
-        <Home />
+        <Box id="Home" className={isSmallScreen ? "sm-screen-section" : "section"}>
+          <Home />
         </Box>
-        <Box className={isSmallScreen ? "sm-screen-section" : "section"}>
-        <ProjectsStripe />
+        <Box id="Projects" className={isSmallScreen ? "sm-screen-section" : "section"}>
+          <ProjectsStripe  />
         </Box>
-        <Box className={isSmallScreen ? "sm-screen-section" : "section"}>
-        <About />
+        <Box id="About" className={isSmallScreen ? "sm-screen-section" : "section"}>
+          <About />
         </Box>
-        <Box className={isSmallScreen ? "sm-screen-section" : "section"}>
-        <Contact />
+        <Box id="Contact" className={isSmallScreen ? "sm-screen-section" : "section"}>
+          <Contact />
         </Box>
       </div>
     </ThemeProvider>

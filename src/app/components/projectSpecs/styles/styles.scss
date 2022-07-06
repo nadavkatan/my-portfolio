@@ -1,5 +1,5 @@
 .project-specs-container{
-    width: 60%;
+    width: 65%;
     .title{
         display: flex;
         align-items: flex-end;
@@ -15,7 +15,8 @@
         .subtitle-text{
             color: white;
             line-height: 2em;
-            font-size:1em
+            font-size:1em;
+            text-align: justify; 
         }
     }
     

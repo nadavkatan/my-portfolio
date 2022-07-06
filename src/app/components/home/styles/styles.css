@@ -6,7 +6,7 @@
 
 .home-wrapper .home-container {
   float: right;
-  width: 90%;
+  width: 100%;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -20,6 +20,7 @@ import {
 import { library } from "@fortawesome/fontawesome-svg-core";
 import "./styles/styles.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import BackgroundHome from "../backgroundHome/BackgroundHome";
 
 const About = () => {
 
@@ -28,18 +29,20 @@ const About = () => {
 
   return (
     <div className="about-wrapper">
+          {/* <BackgroundHome/> */}
       <Grid container spacing={3} className="about-container">
         <Grid item xs={12} md={6}>
           <Typography variant="h1">About Me</Typography>
-          <Typography variant="subtitle2">
+          <Typography variant="subtitle1" style={{lineHeight: '2em', textAlign: 'justify'}}>
             My name is Nadav, and for the last 13 years I have been a classical
-            musician, a pianist. I played in concerts and competitions, and
-            taught a countless amount of students. I have a Master's degree in
+            musician, a pianist. I played in concerts and competitions, and taught a countless amount of students. I have a Master's degree in
             piano performance, and soon also a PhD. <br />
             During covid I was lucky to discover coding and web development as
             another passion of mine, and to see that the tools that I aqcuired
             in my years as a musician, such as creativity and systematic problem
             solving can be extremely helpful in web development. <br />
+            I have recently graduated a 9 months fullstack web development bootcamp which only fueled my passion and curiosity 
+            for coding. <br/> I have now acquired the necessary skills to code professionally and embark on my new career.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} className="carousel-container">
@@ -57,51 +60,51 @@ const About = () => {
               <img src={socketLogo} alt="socket-io-logo" className="carousel-slide"/>
               <FontAwesomeIcon
               color="#0DFDD7"
-              size="7x"
+              size="10x"
               name="react"
               icon={["fab", "react"]}
             />
               <FontAwesomeIcon
               color="#0DFDD7"
-              size="7x"
+              size="10x"
               name="node"
               icon={["fab", "node"]}
             />
              <img src={expressLogo} alt="express-logo" className="carousel-slide"/>
               <FontAwesomeIcon
               color="#0DFDD7"
-              size="7x"
+              size="10x"
               name="git"
               icon={["fab", "git"]}
             />
              <img src={mongoLogo} alt="mongo-logo" className="carousel-slide"/>
               <FontAwesomeIcon
               color="#0DFDD7"
-              size="7x"
+              size="10x"
               name="js"
               icon={["fab", 'js-square']}
             />
             <FontAwesomeIcon
               color="#0DFDD7"
-              size="7x"
+              size="10x"
               name="html"
               icon={["fab", 'html5']}
             />
             <FontAwesomeIcon
               color="#0DFDD7"
-              size="7x"
+              size="10x"
               name="css"
               icon={["fab", 'css3-alt']}
             />
             <FontAwesomeIcon
               color="#0DFDD7"
-              size="7x"
+              size="10x"
               name="sass"
               icon={["fab", 'sass']}
             />
             <FontAwesomeIcon
               color="#0DFDD7"
-              size="7x"
+              size="10x"
               name="bootstrap"
               icon={["fab", 'bootstrap']}
             />
@@ -112,5 +115,4 @@ const About = () => {
     </div>
   );
 };
-//  express
 export default About;

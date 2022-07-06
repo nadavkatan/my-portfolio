@@ -7,9 +7,11 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
+import InfoIcon from '@mui/icons-material/Info';
+import AppsIcon from '@mui/icons-material/Apps';
+import HomeIcon from '@mui/icons-material/Home';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -36,22 +38,17 @@ export default function TemporaryDrawer() {
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {
+
+                index === 0 ? <HomeIcon/>
+                : index === 1 ? <AppsIcon/>
+                : index === 2 ? <InfoIcon/>
+                : <MailIcon/>
+                }
               </ListItemIcon>
+              <a href={`#${text}`} style={{textDecoration: 'none', color: 'black'}}>
               <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
+              </a>
             </ListItemButton>
           </ListItem>
         ))}

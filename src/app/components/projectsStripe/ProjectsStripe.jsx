@@ -95,7 +95,7 @@ const ProjectsStripe = () => {
         </Grid>
       </Grid>
 
-      {/* <BackgroundHome /> */}
+      <BackgroundHome />
     </>
   );
 };
