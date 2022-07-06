@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Greeting from "../greeting/Greeting";
 import BackgroundHome from '../backgroundHome/BackgroundHome';
+import Drawer from '../drawer/Drawer';
 import nadav from "../../assets/images/facebook-profile.jpeg";
 import "./styles/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +12,7 @@ import {
   faLinkedinIn,
   faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
+import { useMediaQuery } from "@mui/material";
 
 const Home = () => {
   const [githubHovered, setGithubHovered] = useState(false);
@@ -18,14 +20,14 @@ const Home = () => {
   const [facebokkHovered, setFacebokkHovered] = useState(false);
 
   library.add(faCheckSquare, faCoffee, faGithub, faLinkedinIn, faFacebookF);
+  const isSmallScreen = useMediaQuery(theme=>theme.breakpoints.down("md"));
+
 
   return (
     <div className="home-wrapper">
-    {/* <div className="home-bg-wrapper"> */}
     <BackgroundHome/>
-    {/* </div> */}
     <div className="home-container">
-
+    {isSmallScreen && <Drawer/>}
       <Greeting />
       <img src={nadav} className="nadav-avatar" alt="nadav-avatar" />
       <div className="icons-container">

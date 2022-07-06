@@ -9,6 +9,7 @@ import { withStyles } from "@mui/styles";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BackgroundHome from "../backgroundHome/BackgroundHome";
 
 const CssTextField = withStyles({
   root: {
@@ -70,8 +71,9 @@ const Contact = () => {
 
   return (
     <Box className="contact-container">
+          {/* <BackgroundHome /> */}
       <ToastContainer />
-      <Typography variant="h1" color="white">
+      <Typography variant="h1" color="white" className="contact-heading">
         Reach Out!
       </Typography>
       <Box
@@ -93,7 +95,13 @@ const Contact = () => {
         />
         <CssTextField
           margin="normal"
-          {...register("email")}
+          {...register("email", {
+            required: "Please fill in your email",
+            pattern: {
+              value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+              message: "Please enter a valid email address",
+            },
+          })}
           required
           fullWidth
           id="email"
@@ -103,6 +111,11 @@ const Contact = () => {
           InputLabelProps={{ style: { color: "#0DFDD7" } }}
           sx={{ input: { color: "white" } }}
         />
+        {errors.email && (
+          <Typography variant="subtitle2" color="error">
+            {errors.email.message}
+          </Typography>
+        )}
         <CssTextField
           multiline
           rows={6}

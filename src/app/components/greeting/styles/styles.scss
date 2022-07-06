@@ -11,16 +11,26 @@
             display: flex;
             justify-content:center;
             align-items:flex-start;
-            .header-letter{
-                font-size:5em;
-                // animation: test 5s infinite;
-                &:hover {
-                    color:#0DFDD7;
-                    cursor: pointer;
-                    animation: rubberBand 1s;
-                    animation-iteration-count: 1;
+            flex-wrap: wrap;
+            .greeting-word{
+                display: flex;
+                // align-items: flex-end;
+                .sm-screen-header-letter{
+                    margin-top:0.7em;
+                    font-size:3em;
+                }
+                .header-letter{
+                    font-size:5em;
+                    // animation: test 5s infinite;
+                    &:hover {
+                        color:#0DFDD7;
+                        cursor: pointer;
+                        animation: rubberBand 1s;
+                        animation-iteration-count: 1;
+                    }
                 }
             }
+
             
         }
     }

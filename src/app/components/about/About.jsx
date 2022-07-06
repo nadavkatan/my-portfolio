@@ -29,7 +29,7 @@ const About = () => {
   return (
     <div className="about-wrapper">
       <Grid container spacing={3} className="about-container">
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <Typography variant="h1">About Me</Typography>
           <Typography variant="subtitle2">
             My name is Nadav, and for the last 13 years I have been a classical
@@ -42,7 +42,7 @@ const About = () => {
             solving can be extremely helpful in web development. <br />
           </Typography>
         </Grid>
-        <Grid item xs={6} className="carousel-container">
+        <Grid item xs={12} md={6} className="carousel-container">
           <Carousel 
           className="carousel"
           infiniteLoop

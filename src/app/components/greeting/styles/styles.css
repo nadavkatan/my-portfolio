@@ -20,13 +20,26 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.wrapper .header-text-container .header-text .header-letter {
+.wrapper .header-text-container .header-text .greeting-word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .header-text-container .header-text .greeting-word .sm-screen-header-letter {
+  margin-top: 0.7em;
+  font-size: 3em;
+}
+
+.wrapper .header-text-container .header-text .greeting-word .header-letter {
   font-size: 5em;
 }
 
-.wrapper .header-text-container .header-text .header-letter:hover {
+.wrapper .header-text-container .header-text .greeting-word .header-letter:hover {
   color: #0DFDD7;
   cursor: pointer;
   -webkit-animation: rubberBand 1s;

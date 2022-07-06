@@ -1,3 +1,13 @@
 .app-container {
   width: 100vw;
 }
+
+.app-container .sm-screen-section {
+  width: 100vw;
+  float: right;
+}
+
+.app-container .section {
+  width: 88%;
+  float: right;
+}

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 10%;
+    width: 12%;
     background-color: black;
     position: fixed;
     box-shadow: 0px 0px 10px 0px gray;
@@ -13,7 +13,7 @@
         height: 50%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         .nav-item{
             position: relative;
