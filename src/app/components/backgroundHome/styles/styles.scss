@@ -1,5 +1,6 @@
 $color-bg: #111;
-$color-particle: #fff;
+// $color-particle: #fff;
+$color-particle: #F9F9C5;
 $spacing: 2560px;
 $time-1: 60s;
 $time-2: 120s;
@@ -33,6 +34,7 @@ $time-4: 600s;
 .particle:after {
   content: "";
   top: $spacing;
+  border-radius: 50%;
 }
 
 .particle-1 {
@@ -40,12 +42,15 @@ $time-4: 600s;
   @include particles(600);
   height: 1px;
   width: 1px;
+  border-radius: 50%;
 }
 
 .particle-1:after {
   @include particles(600);
   height: 1px;
   width: 1px;
+  border-radius: 50%;
+
 }
 
 .particle-2 {
@@ -53,12 +58,16 @@ $time-4: 600s;
   @include particles(200);
   height: 2px;
   width: 2px;
+  border-radius: 50%;
+
 }
 
 .particle-2:after {
   @include particles(200);
   height: 2px;
   width: 2px;
+  border-radius: 50%;
+
 }
 
 .particle-3 {
@@ -66,12 +75,16 @@ $time-4: 600s;
   @include particles(100);
   height: 3px;
   width: 3px;
+  border-radius: 50%;
+
 }
 
 .particle-3:after {
   @include particles(100);
   height: 3px;
   width: 3px;
+  border-radius: 50%;
+
 }
 
 .particle-4 {
@@ -79,12 +92,16 @@ $time-4: 600s;
   @include particles(400);
   height: 1px;
   width: 1px;
+  border-radius: 50%;
+
 }
 
 .particle-4:after {
   @include particles(400);
   height: 1px;
   width: 1px;
+  border-radius: 50%;
+
 }
 
 @keyframes animParticle {

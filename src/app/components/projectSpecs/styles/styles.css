@@ -15,10 +15,37 @@
   color: white;
   font-size: 3em;
   margin-bottom: 0.3em;
-  margin-left: -0.2em;
+  margin-left: -0.1em;
 }
 
 .project-specs-container .subtitle .subtitle-text {
+  color: white;
+  line-height: 2em;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.sm-screen-project-specs-container {
+  width: 80%;
+}
+
+.sm-screen-project-specs-container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.sm-screen-project-specs-container .title .title-letters {
+  color: white;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+  margin-left: -0.1em;
+}
+
+.sm-screen-project-specs-container .subtitle .subtitle-text {
   color: white;
   line-height: 2em;
   font-size: 1em;

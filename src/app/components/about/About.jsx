@@ -21,18 +21,19 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import "./styles/styles.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import BackgroundHome from "../backgroundHome/BackgroundHome";
+import { useMediaQuery } from "@mui/material";
 
 const About = () => {
 
     library.add(faReact, faNode, faGit, faJsSquare, faHtml5, faCss3Alt, faSass, faBootstrap);
-
+    const isSmallScreen = useMediaQuery(theme=> theme.breakpoints.down("md"));
 
   return (
     <div className="about-wrapper">
           {/* <BackgroundHome/> */}
       <Grid container spacing={3} className="about-container">
         <Grid item xs={12} md={6}>
-          <Typography variant="h1">About Me</Typography>
+          <Typography variant="h1" style={{fontSize: isSmallScreen? '3em' : '5em'}}>About Me</Typography>
           <Typography variant="subtitle1" style={{lineHeight: '2em', textAlign: 'justify'}}>
             My name is Nadav, and for the last 13 years I have been a classical
             musician, a pianist. I played in concerts and competitions, and taught a countless amount of students. I have a Master's degree in

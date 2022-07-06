@@ -133,7 +133,7 @@ const Contact = () => {
           InputLabelProps={{ style: { color: "#0DFDD7" } }}
           sx={{ textarea: { color: "white" } }}
         />
-        <Button type="submit" variant="contained" sx={{ mt: 3, mb: 2 }}>
+        <Button type="submit" variant="contained" color="error" sx={{ mt: 3, mb: 2 }}>
           Send
         </Button>
       </Box>
