@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Spyke from "../spyke/Spyke";
 import Shilo from "../shilo/Shilo";
 import Earpong from "../earpong/Earpong";
@@ -7,8 +7,9 @@ import BackgroundHome from "../backgroundHome/BackgroundHome";
 import "./styles/styles.css";
 import { Grid, useMediaQuery } from "@mui/material";
 
-const ProjectsStripe = () => {
+const ProjectsStripe = ({focusedSection, scrollToSection}) => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const titleElement = useRef();
 
   const spykeSubtitle =
     "Spyke is a Skype clone. It contains all the basic features of skype: Connecting, live chatting and video calling other Spyke users! It also includes awesome features such as live notifications, authentication, profile customizations and more! The main technologies I used to build this app are: React, Redux, Mongoose, Nodejs & Express, Passport js, Material Ui, Socket.io, and Peer js.";
@@ -23,6 +24,13 @@ const ProjectsStripe = () => {
   const earpongStyled =
     "Click the 'Play sound' button, listen carefully and try to recognize whether the played sound is 'C' or 'G'. Submit your answer by clicking the corresponding sound button. If you're correct, you will be redirected to the live project, if you're wrong, to the source code.";
 
+  useEffect(()=>{
+    if(focusedSection === "Projects"){
+      scrollToSection(titleElement.current)
+    }
+  },[focusedSection])
+
+
   return (
     <>
       <Grid
@@ -32,7 +40,7 @@ const ProjectsStripe = () => {
           isSmallScreen ? "sm-screen-project-container" : "project-container"
         }
       >
-        <Grid item xs={12} md={6} className="project-stripe-grid-item">
+        <Grid item xs={12} md={6} className="project-stripe-grid-item" ref={titleElement}>
           <ProjectSpecs
             letter="S"
             title="pyke"

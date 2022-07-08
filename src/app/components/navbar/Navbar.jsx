@@ -1,18 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles/styles.css'
 
-const Navbar = () => {
-
+const Navbar = ({setFocusedSection}) => {
 
   return (
     <div className="navbar-container">
-        <ul className="navbar">
-            <li className="nav-item"><a href="#Home" style={{textDecoration: 'none', color: 'white'}}>Home</a></li>
-            <li className="nav-item"><a href="#Projects" style={{textDecoration: 'none', color: 'white'}}>Projects</a></li>
-            <li className="nav-item"><a href="#About" style={{textDecoration: 'none', color: 'white'}}>About</a></li>
-            <li className="nav-item"><a href="#Contact" style={{textDecoration: 'none', color: 'white'}}>Contact</a></li>
-        </ul>
-    </div>
+    <ul className="navbar">
+        <li className="nav-item" onClick={()=>setFocusedSection("Home")}>Home</li>
+        <li className="nav-item" onClick={()=>setFocusedSection("Projects")}>Projects</li>
+        <li className="nav-item" onClick={()=>setFocusedSection("About")}>About</li>
+        <li className="nav-item" onClick={()=>setFocusedSection("Contact")}>Contact</li>
+    </ul>
+</div>
   )
 }
 

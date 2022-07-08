@@ -14,7 +14,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { useMediaQuery } from "@mui/material";
 
-const Home = () => {
+const Home = ({setFocusedSection}) => {
   const [githubHovered, setGithubHovered] = useState(false);
   const [linkedInHovered, setLinkedInHovered] = useState(false);
   const [facebokkHovered, setFacebokkHovered] = useState(false);
@@ -27,7 +27,7 @@ const Home = () => {
     <div className={isSmallScreen ? "sm-screen-home-wrapper" : "home-wrapper"}>
     <BackgroundHome/>
     <div className="home-container">
-    {isSmallScreen && <Drawer/>}
+    {isSmallScreen && <Drawer setFocusedSection={setFocusedSection}/>}
       <Greeting />
       <img src={nadav} className="nadav-avatar" alt="nadav-avatar" />
       <div className="icons-container">

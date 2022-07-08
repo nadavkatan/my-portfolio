@@ -13,7 +13,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import AppsIcon from '@mui/icons-material/Apps';
 import HomeIcon from '@mui/icons-material/Home';
 
-export default function TemporaryDrawer() {
+export default function TemporaryDrawer({setFocusedSection}) {
   const [state, setState] = React.useState({
     top: false,
   });
@@ -36,7 +36,7 @@ export default function TemporaryDrawer() {
       <List>
         {['Home', 'Projects', 'About', 'Contact'].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton onClick={()=> setFocusedSection(text)}>
               <ListItemIcon>
                 {
 
@@ -46,9 +46,9 @@ export default function TemporaryDrawer() {
                 : <MailIcon/>
                 }
               </ListItemIcon>
-              <a href={`#${text}`} style={{textDecoration: 'none', color: 'black'}}>
+              {/* <a href={`#${text}`} style={{textDecoration: 'none', color: 'black'}}> */}
               <ListItemText primary={text} />
-              </a>
+              {/* </a> */}
             </ListItemButton>
           </ListItem>
         ))}
