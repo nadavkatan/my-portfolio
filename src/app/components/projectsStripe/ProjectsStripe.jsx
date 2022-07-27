@@ -2,12 +2,13 @@ import React, { useEffect, useRef } from "react";
 import Spyke from "../spyke/Spyke";
 import Shilo from "../shilo/Shilo";
 import Earpong from "../earpong/Earpong";
+import MissCohen from "../missCohen/MissCohen";
 import ProjectSpecs from "../projectSpecs/ProjectSpecs";
 import BackgroundHome from "../backgroundHome/BackgroundHome";
 import "./styles/styles.css";
 import { Grid, useMediaQuery } from "@mui/material";
 
-const ProjectsStripe = ({focusedSection, scrollToSection}) => {
+const ProjectsStripe = ({ focusedSection, scrollToSection }) => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
   const titleElement = useRef();
 
@@ -23,13 +24,16 @@ const ProjectsStripe = ({focusedSection, scrollToSection}) => {
     "Earpong! is an ear-training app for users to practice their relative pitch recognition. The app generates random sounds for the user to try and recognize. It is based on a famous ear-training exercise used in music colleges. Earpong! is a rather simple React app, one of the first ones that I have developed, but I love it! It was built with React, Materia Ui, and Tone.js";
   const earpongStyled =
     "Click the 'Play sound' button, listen carefully and try to recognize whether the played sound is 'C' or 'G'. Submit your answer by clicking the corresponding sound button. If you're correct, you will be redirected to the live project, if you're wrong, to the source code.";
+  const missCohenSubtitle =
+    "'Miss Cohen' is an e-commerce website that sells mediterranean food. Customers can browse through the shop's products, place their orders and paying with PayPal. Later, they will receive a confirmation email with their order specifications. The seller will receieve an email notifying them about the order and its specifications. This project was built with React, Redux, Typescript, Mongoose, Nodejs, Nodemailer, Passport js, PayPal api, and Material Ui ";
+  const missCohenStyled =
+    "To view the project live, add the Hummus dish to the cart and checkout. To see the source code, add the Shakshuka dish to the cart and checkout";
 
-  useEffect(()=>{
-    if(focusedSection === "Projects"){
-      scrollToSection(titleElement.current)
+  useEffect(() => {
+    if (focusedSection === "Projects") {
+      scrollToSection(titleElement.current);
     }
-  },[focusedSection])
-
+  }, [focusedSection]);
 
   return (
     <>
@@ -40,7 +44,13 @@ const ProjectsStripe = ({focusedSection, scrollToSection}) => {
           isSmallScreen ? "sm-screen-project-container" : "project-container"
         }
       >
-        <Grid item xs={12} md={6} className="project-stripe-grid-item" ref={titleElement}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          className="project-stripe-grid-item"
+          ref={titleElement}
+        >
           <ProjectSpecs
             letter="S"
             title="pyke"
@@ -57,14 +67,19 @@ const ProjectsStripe = ({focusedSection, scrollToSection}) => {
         container
         spacing={3}
         className={
-          isSmallScreen ? "sm-screen-project-container" : "project-container"
+          isSmallScreen
+            ? "sm-screen-project-container reverse"
+            : "project-container"
         }
       >
-        {!isSmallScreen && (
-          <Grid item xs={12} md={6} className="project-stripe-grid-item">
-            <Shilo />
-          </Grid>
-        )}
+        <Grid
+          item
+          xs={12}
+          md={6}
+          className="project-stripe-grid-item reversed-item"
+        >
+          <Shilo />
+        </Grid>
 
         <Grid item xs={12} md={6} className="project-stripe-grid-item">
           <ProjectSpecs
@@ -75,11 +90,6 @@ const ProjectsStripe = ({focusedSection, scrollToSection}) => {
             styledText={shiloStyled}
           />
         </Grid>
-        {isSmallScreen && (
-          <Grid item xs={12} md={6} className="project-stripe-grid-item">
-            <Shilo />
-          </Grid>
-        )}
       </Grid>
       <Grid
         container
@@ -90,6 +100,29 @@ const ProjectsStripe = ({focusedSection, scrollToSection}) => {
       >
         <Grid item xs={12} md={6} className="project-stripe-grid-item">
           <ProjectSpecs
+            letter="M"
+            title="iiss Cohen"
+            transform={-65}
+            subtitle={missCohenSubtitle}
+            styledText={missCohenStyled}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} className="project-stripe-grid-item">
+          <MissCohen />
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        spacing={3}
+        className={
+          isSmallScreen ? "sm-screen-project-container reverse" : "project-container"
+        }
+      >
+        <Grid item xs={12} md={6} className="project-stripe-grid-item reversed-item">
+          <Earpong />
+        </Grid>
+        <Grid item xs={12} md={6} className="project-stripe-grid-item">
+          <ProjectSpecs
             pecs
             letter="E"
             title="arpong!"
@@ -97,9 +130,6 @@ const ProjectsStripe = ({focusedSection, scrollToSection}) => {
             subtitle={earpongSubtitle}
             styledText={earpongStyled}
           />
-        </Grid>
-        <Grid item xs={12} md={6} className="project-stripe-grid-item">
-          <Earpong />
         </Grid>
       </Grid>
 

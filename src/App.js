@@ -20,7 +20,8 @@ function App() {
 
   const scrollToSection = (element)=>{
     element.scrollIntoView({
-      behavior:"smooth"
+      behavior:"smooth",
+      block: "center"
     })
   }
 

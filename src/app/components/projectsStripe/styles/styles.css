@@ -27,9 +27,9 @@
 }
 
 .sm-screen-project-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   padding-top: 3em;
   background-color: #1D1D1D;
   -webkit-box-align: start;
@@ -51,4 +51,15 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 3em;
+}
+
+.reverse {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: column-reverse !important;
+          flex-direction: column-reverse !important;
+}
+
+.reverse .reversed-item {
+  width: 100%;
 }

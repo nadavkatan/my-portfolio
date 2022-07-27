@@ -23,7 +23,7 @@ const Shilo = () => {
             rel="noreferrer"
           >
             <Typography variant="h4" color="white" align="center">
-              Johan Sebastian Bach
+              Johann Sebastian Bach
             </Typography>
           </a>
           <a

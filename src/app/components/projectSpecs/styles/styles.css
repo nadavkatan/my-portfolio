@@ -43,6 +43,8 @@
   font-size: 3em;
   margin-bottom: 0.3em;
   margin-left: -0.1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .sm-screen-project-specs-container .subtitle .subtitle-text {

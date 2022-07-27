@@ -6,6 +6,7 @@ import mongoLogo from "../../assets/images/mongo-logo.png";
 import expressLogo from '../../assets/images/express-logo.png';
 import socketLogo from '../../assets/images/socket-logo.png';
 import muiLogo from '../../assets/images/mui-logo.png';
+import typescriptLogo from '../../assets/images/typescript-logo.png';
 import {
     faReact,
     faNode,
@@ -85,6 +86,7 @@ const About = () => {
               name="js"
               icon={["fab", 'js-square']}
             />
+                <img src={typescriptLogo} alt="typescript-logo" className="carousel-slide"/>
             <FontAwesomeIcon
               color="#0DFDD7"
               size="10x"
