@@ -11,8 +11,8 @@ const Shilo = () => {
         <div className="flip-card-front">
           <div className="front-text">
             <Typography variant="h5" color="white" align="center">
-              Who composed the musical masterpiece <em>'Das Wohltemperierte
-              Klavier'?</em>
+              Who composed the musical masterpiece{" "}
+              <em>'Das Wohltemperierte Klavier'?</em>
             </Typography>
           </div>
         </div>
@@ -27,7 +27,8 @@ const Shilo = () => {
             </Typography>
           </a>
           <a
-            href="https://shilo-app.herokuapp.com"
+            // href="https://shilo-app.herokuapp.com"
+            href="https://shilo.onrender.com"
             target="_blank"
             rel="noreferrer"
           >

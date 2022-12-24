@@ -17,7 +17,7 @@ const Spyke = () => {
       </div>
 
       <div className="incoming-call-btns-container">
-      <a
+        <a
           href="https://github.com/nadavkatan/Skype"
           target="_blank"
           rel="noreferrer"
@@ -27,7 +27,8 @@ const Spyke = () => {
           </Fab>
         </a>
         <a
-          href="https://my-skype-clone.herokuapp.com"
+          // href="https://my-skype-clone.herokuapp.com"
+          href="https://my-skype-clone.onrender.com/"
           target="_blank"
           rel="noreferrer"
         >
@@ -35,7 +36,6 @@ const Spyke = () => {
             <CallIcon />
           </Fab>
         </a>
-
       </div>
     </Paper>
   );
