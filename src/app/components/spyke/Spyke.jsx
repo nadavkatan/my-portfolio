@@ -27,7 +27,6 @@ const Spyke = () => {
           </Fab>
         </a>
         <a
-          // href="https://my-skype-clone.herokuapp.com"
           href="https://my-skype-clone.onrender.com/"
           target="_blank"
           rel="noreferrer"

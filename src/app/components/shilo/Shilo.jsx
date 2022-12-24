@@ -26,12 +26,7 @@ const Shilo = () => {
               Johann Sebastian Bach
             </Typography>
           </a>
-          <a
-            // href="https://shilo-app.herokuapp.com"
-            href="https://shilo.onrender.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://shilo.onrender.com" target="_blank" rel="noreferrer">
             <img src={bach} alt="bach avatar" className="bach-avatar" />
           </a>
         </div>
