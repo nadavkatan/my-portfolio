@@ -45,13 +45,13 @@ const Earpong = () => {
     // console.log()
     if (answerSubmitted && correct) {
       setTimeout(() => {
-        window.open("https://earpong-react.netlify.app", "_blank");
+        window.open("https://nadavkatan.github.io/earpong/", "_blank");
         reset();
       }, 2000);
     }
     if (answerSubmitted && !correct) {
       setTimeout(() => {
-        window.open("https://github.com/nadavkatan/Earpong-React", "_blank");
+        window.open("https://github.com/nadavkatan/earpong", "_blank");
         reset();
       }, 2000);
     }
@@ -59,44 +59,46 @@ const Earpong = () => {
 
   return (
     <>
-    <Paper className="earpong-container">
-      <div className="earpong-card-content">
-        <div className="sound-btns">
-          <Button
-            variant="contained"
-            name="c"
-            className="earpong-btns"
-            onClick={() => handleAnswer("c")}
-          >
-            C
-          </Button>
-          <Button
-            variant="contained"
-            name="g"
-            className="earpong-btns"
-            onClick={() => handleAnswer("g")}
-          >
-            G
-          </Button>
+      <Paper className="earpong-container">
+        <div className="earpong-card-content">
+          <div className="sound-btns">
+            <Button
+              variant="contained"
+              name="c"
+              className="earpong-btns"
+              onClick={() => handleAnswer("c")}
+            >
+              C
+            </Button>
+            <Button
+              variant="contained"
+              name="g"
+              className="earpong-btns"
+              onClick={() => handleAnswer("g")}
+            >
+              G
+            </Button>
+          </div>
+          <div className="earpong-avatar-container">
+            <Button
+              variant="contained"
+              color="warning"
+              className="earpong-btns"
+              onClick={playSound}
+            >
+              Play sound
+            </Button>
+            <img
+              src={
+                correct || correct === undefined ? neutralAvatar : angryAvatar
+              }
+              alt="teacher-avatar"
+              className="earpong-avatar"
+            />
+          </div>
+          <audio src={c} ref={audioEl}></audio>
         </div>
-        <div className="earpong-avatar-container">
-          <Button
-            variant="contained"
-            color="warning"
-            className="earpong-btns"
-            onClick={playSound}
-          >
-            Play sound
-          </Button>
-          <img
-            src={correct || correct === undefined ? neutralAvatar : angryAvatar}
-            alt="teacher-avatar"
-            className="earpong-avatar"
-          />
-        </div>
-        <audio src={c} ref={audioEl}></audio>
-      </div>
-    </Paper>
+      </Paper>
     </>
   );
 };
