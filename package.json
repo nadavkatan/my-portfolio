@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -24,7 +24,8 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.0.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zimjs": "^16.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
