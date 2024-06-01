@@ -4,6 +4,7 @@
     width: 20em;
     height: 30em;
     perspective: 1000px;
+    cursor: pointer;
   }
   
   .flip-card-inner {
@@ -14,8 +15,8 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
-  .flip-card:hover .flip-card-inner {
+
+  .rotate-card {
     transform: rotateY(180deg);
   }
   

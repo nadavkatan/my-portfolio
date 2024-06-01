@@ -12,7 +12,6 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .project-container .project-stripe-grid-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,7 +37,6 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .sm-screen-project-container .project-stripe-grid-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +57,6 @@
       -ms-flex-direction: column-reverse !important;
           flex-direction: column-reverse !important;
 }
-
 .reverse .reversed-item {
   width: 100%;
 }

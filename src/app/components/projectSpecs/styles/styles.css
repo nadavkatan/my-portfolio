@@ -1,7 +1,6 @@
 .project-specs-container {
   width: 65%;
 }
-
 .project-specs-container .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,14 +9,12 @@
       -ms-flex-align: end;
           align-items: flex-end;
 }
-
 .project-specs-container .title .title-letters {
   color: white;
   font-size: 3em;
   margin-bottom: 0.3em;
   margin-left: -0.1em;
 }
-
 .project-specs-container .subtitle .subtitle-text {
   color: white;
   line-height: 2em;
@@ -28,7 +25,6 @@
 .sm-screen-project-specs-container {
   width: 80%;
 }
-
 .sm-screen-project-specs-container .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,7 +33,6 @@
       -ms-flex-align: end;
           align-items: flex-end;
 }
-
 .sm-screen-project-specs-container .title .title-letters {
   color: white;
   font-size: 3em;
@@ -46,7 +41,6 @@
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-
 .sm-screen-project-specs-container .subtitle .subtitle-text {
   color: white;
   line-height: 2em;

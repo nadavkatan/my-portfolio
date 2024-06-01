@@ -9,13 +9,11 @@
   transition: 1s all !important;
   overflow: hidden;
 }
-
 .earpong-container:hover {
   -webkit-filter: drop-shadow(2px 2px 20px yellow);
           filter: drop-shadow(2px 2px 20px yellow);
   cursor: pointer;
 }
-
 .earpong-container::before {
   content: " ";
   position: absolute;
@@ -28,7 +26,6 @@
   -webkit-animation: rotate 10s linear infinite;
           animation: rotate 10s linear infinite;
 }
-
 .earpong-container .earpong-card-content {
   color: white;
   position: absolute;
@@ -49,7 +46,6 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .earpong-container .earpong-card-content .earpong-avatar-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,12 +59,10 @@
           align-items: center;
   margin-top: 4em;
 }
-
 .earpong-container .earpong-card-content .earpong-avatar-container .earpong-avatar {
   width: 15em;
   height: auto;
 }
-
 .earpong-container .earpong-card-content .sound-btns {
   width: 100%;
   display: -webkit-box;

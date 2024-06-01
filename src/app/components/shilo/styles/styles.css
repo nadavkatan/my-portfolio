@@ -5,6 +5,7 @@
   height: 30em;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  cursor: pointer;
 }
 
 .flip-card-inner {
@@ -20,7 +21,7 @@
           transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.rotate-card {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -71,7 +72,6 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .flip-card-back .bach-avatar {
   height: 16em;
   width: 17em;

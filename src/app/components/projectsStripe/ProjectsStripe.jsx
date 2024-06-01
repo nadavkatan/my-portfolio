@@ -3,6 +3,7 @@ import Spyke from "../spyke/Spyke";
 import Shilo from "../shilo/Shilo";
 import Earpong from "../earpong/Earpong";
 import MissCohen from "../missCohen/MissCohen";
+import Gestalt from "../gestalt/Gestalt";
 import ProjectSpecs from "../projectSpecs/ProjectSpecs";
 import BackgroundHome from "../backgroundHome/BackgroundHome";
 import "./styles/styles.css";
@@ -21,13 +22,17 @@ const ProjectsStripe = ({ focusedSection, scrollToSection }) => {
   const shiloStyled =
     "Click the composer's pic to view the project live, or his name to see the source code";
   const earpongSubtitle =
-    "Earpong! is an ear-training app for users to practice their relative pitch recognition. The app generates random sounds for the user to try and recognize. It is based on a famous ear-training exercise used in music colleges. Earpong! is a rather simple React app, one of the first ones that I have developed, but I love it! It was built with React, Materia Ui, and Tone.js";
+    "Earpong! is an ear-training app for users to practice their relative pitch recognition. The app generates random sounds for the user to try and recognize. It is based on a famous ear-training exercise used in music colleges. Earpong! is a rather simple vanilla javascript app, one of the first ones that I have developed, but I love it! ";
   const earpongStyled =
     "Click the 'Play sound' button, listen carefully and try to recognize whether the played sound is 'C' or 'G'. Submit your answer by clicking the corresponding sound button. If you're correct, you will be redirected to the live project, if you're wrong, to the source code.";
   const missCohenSubtitle =
     "'Miss Cohen' is an e-commerce website that sells mediterranean food. Customers can browse through the shop's products, place their orders and paying with PayPal. Later, they will receive a confirmation email with their order specifications. The seller will receieve an email notifying them about the order and its specifications. This project was built with React, Redux, Typescript, Mongoose, Nodejs, Nodemailer, Passport js, PayPal api, and Material Ui ";
   const missCohenStyled =
     "To view the project live, add the Hummus dish to the cart and checkout. To see the source code, add the Shakshuka dish to the cart and checkout";
+
+  const gestaltSubtitle = `"Gestalt" is a pedagogical application designed to interactively teach the principles of Gestalt psychology in visual and auditory perception. It presents the Gestalt principles interactively, discusses their limitations, and proposes a holistic body-minf alternative. This app is a checpter of my PhD dissertation, promoting an artistic approach to the relationships between music analysis and performance.`;
+  const gestaltStyled =
+    "Use the cursor as a bruch to circle a group of dots. To view the app live, circle the blue group. To see the source code, circle the yellow. If you circle both colors, the more prominently circled color will determine the window's destination.";
 
   useEffect(() => {
     if (focusedSection === "Projects") {
@@ -100,25 +105,33 @@ const ProjectsStripe = ({ focusedSection, scrollToSection }) => {
       >
         <Grid item xs={12} md={6} className="project-stripe-grid-item">
           <ProjectSpecs
-            letter="M"
-            title="iiss Cohen"
-            transform={-65}
-            subtitle={missCohenSubtitle}
-            styledText={missCohenStyled}
+            letter="G"
+            title="estalt game"
+            transform={-54}
+            subtitle={gestaltSubtitle}
+            styledText={gestaltStyled}
           />
         </Grid>
         <Grid item xs={12} md={6} className="project-stripe-grid-item">
-          <MissCohen />
+          {/* <MissCohen /> */}
+          <Gestalt />
         </Grid>
       </Grid>
       <Grid
         container
         spacing={3}
         className={
-          isSmallScreen ? "sm-screen-project-container reverse" : "project-container"
+          isSmallScreen
+            ? "sm-screen-project-container reverse"
+            : "project-container"
         }
       >
-        <Grid item xs={12} md={6} className="project-stripe-grid-item reversed-item">
+        <Grid
+          item
+          xs={12}
+          md={6}
+          className="project-stripe-grid-item reversed-item"
+        >
           <Earpong />
         </Grid>
         <Grid item xs={12} md={6} className="project-stripe-grid-item">

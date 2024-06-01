@@ -6,13 +6,11 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .about-wrapper .about-container {
   margin-bottom: 4em;
   width: 80%;
   color: white;
 }
-
 .about-wrapper .about-container .carousel-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +19,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .about-wrapper .about-container .carousel-container .carousel .carousel-slide {
   height: 10em;
   width: auto;

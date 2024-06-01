@@ -3,7 +3,6 @@
   background-color: #1D1D1D;
   height: 100vh;
 }
-
 .home-wrapper .home-container {
   float: right;
   width: 100%;
@@ -20,7 +19,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .home-wrapper .home-container .nadav-avatar {
   width: auto;
   height: 18em;
@@ -31,14 +29,12 @@
   -webkit-transition: 1s all;
   transition: 1s all;
 }
-
 .home-wrapper .home-container .nadav-avatar:hover {
   height: 19em;
   cursor: pointer;
   -webkit-filter: drop-shadow(2px 2px 20px red);
           filter: drop-shadow(2px 2px 20px red);
 }
-
 .home-wrapper .home-container .icons-container {
   margin-top: 4em;
   width: 20%;
@@ -48,11 +44,9 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .home-wrapper .home-container .icons-container .icon {
   cursor: pointer;
 }
-
 .home-wrapper .home-bg-wrapper {
   position: absolute;
   z-index: 0;
@@ -62,7 +56,6 @@
   width: 100%;
   background-color: #1D1D1D;
 }
-
 .sm-screen-home-wrapper .home-container {
   float: right;
   width: 100%;
@@ -79,7 +72,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .sm-screen-home-wrapper .home-container .nadav-avatar {
   width: auto;
   height: 18em;
@@ -90,14 +82,12 @@
   -webkit-transition: 1s all;
   transition: 1s all;
 }
-
 .sm-screen-home-wrapper .home-container .nadav-avatar:hover {
   height: 19em;
   cursor: pointer;
   -webkit-filter: drop-shadow(2px 2px 20px red);
           filter: drop-shadow(2px 2px 20px red);
 }
-
 .sm-screen-home-wrapper .home-container .icons-container {
   margin-top: 4em;
   width: 35%;
@@ -107,11 +97,9 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .sm-screen-home-wrapper .home-container .icons-container .icon {
   cursor: pointer;
 }
-
 .sm-screen-home-wrapper .home-bg-wrapper {
   position: absolute;
   z-index: 0;

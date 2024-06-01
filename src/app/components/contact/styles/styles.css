@@ -17,12 +17,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .contact-container .contact-heading {
   font-size: 5em;
   width: 80%;
 }
-
 .contact-container .contact-form {
   width: 80%;
 }
@@ -44,12 +42,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .sm-screen-contact-container .contact-heading {
   font-size: 3em;
   width: 80%;
 }
-
 .sm-screen-contact-container .contact-form {
   width: 80%;
 }

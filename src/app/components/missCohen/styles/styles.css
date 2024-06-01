@@ -21,19 +21,16 @@
   -webkit-transition: 1s all !important;
   transition: 1s all !important;
 }
-
 .miss-cohen-project-card:hover {
   cursor: pointer;
   -webkit-filter: drop-shadow(2px 2px 20px purple);
           filter: drop-shadow(2px 2px 20px purple);
 }
-
 .miss-cohen-project-card .miss-cohen-logo {
   height: 13em;
   width: 13em;
   margin-top: -3em;
 }
-
 .miss-cohen-project-card .miss-cohen-cards-container .miss-cohen-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,12 +46,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .miss-cohen-project-card .miss-cohen-cards-container .miss-cohen-card .miss-cohen-dish {
   width: 8em;
   border-radius: 5px;
 }
-
 .miss-cohen-project-card .miss-cohen-cards-container .miss-cohen-card .miss-cohen-add-btn {
   margin-top: 1em;
   font-size: 10px;

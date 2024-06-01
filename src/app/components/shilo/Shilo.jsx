@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import bach from "../../assets/images/bach.jpeg";
 import "./styles/styles.css";
 
 const Shilo = () => {
+  const [hover, setHover] = useState(false);
   return (
-    <Paper className="flip-card">
-      <div className="flip-card-inner">
+    <Paper
+      className="flip-card"
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
+      <div
+        className={hover ? "flip-card-inner rotate-card" : "flip-card-inner"}
+      >
         <div className="flip-card-front">
           <div className="front-text">
             <Typography variant="h5" color="white" align="center">

@@ -5,11 +5,9 @@
   display: flex;
   width: 1.6em;
 }
-
 .letters-container .blue-letter {
   color: #0DFDD7;
 }
-
 .letters-container .red-letter {
   color: red;
 }

@@ -21,13 +21,11 @@
   -webkit-transition: 1s all !important;
   transition: 1s all !important;
 }
-
 .project-card:hover {
   cursor: pointer;
   -webkit-filter: drop-shadow(2px 2px 20px blue);
           filter: drop-shadow(2px 2px 20px blue);
 }
-
 .project-card .incoming-call-btns-container {
   width: 50%;
   display: -webkit-box;
@@ -36,13 +34,11 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .project-card .user-calling .username, .project-card .user-calling .incoming-call-text {
   text-align: center;
   color: white;
   margin-bottom: 0.5em;
 }
-
 .project-card .shira-avatar {
   height: 10em;
   width: 10em;
