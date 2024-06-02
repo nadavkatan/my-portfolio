@@ -4,11 +4,16 @@ import StyledLetter from "../styledLetter/StyledLetter";
 import "./styles/styles.css";
 
 const ProjectSpecs = ({ letter, title, subtitle, styledText, transform }) => {
-
-  const isSmallScreen = useMediaQuery(theme=>theme.breakpoints.down("md"))
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
 
   return (
-    <div className={isSmallScreen ? "sm-screen-project-specs-container" :"project-specs-container"}>
+    <div
+      className={
+        isSmallScreen
+          ? "sm-screen-project-specs-container"
+          : "project-specs-container"
+      }
+    >
       <div className="title">
         <StyledLetter letter={letter} transform={transform} />
         <h1 className="title-letters">{title}</h1>

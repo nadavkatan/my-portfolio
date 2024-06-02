@@ -41,6 +41,9 @@
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.sm-screen-project-specs-container .title .title-letters.line-break {
+  margin-bottom: -1em;
+}
 .sm-screen-project-specs-container .subtitle .subtitle-text {
   color: white;
   line-height: 2em;

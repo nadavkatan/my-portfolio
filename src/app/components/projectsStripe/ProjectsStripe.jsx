@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Spyke from "../spyke/Spyke";
 import Shilo from "../shilo/Shilo";
 import Earpong from "../earpong/Earpong";
-import MissCohen from "../missCohen/MissCohen";
 import Gestalt from "../gestalt/Gestalt";
+import InformedPhrasing from "../informedPhrasing/InformedPhrasing";
 import ProjectSpecs from "../projectSpecs/ProjectSpecs";
 import BackgroundHome from "../backgroundHome/BackgroundHome";
 import "./styles/styles.css";
@@ -25,11 +25,10 @@ const ProjectsStripe = ({ focusedSection, scrollToSection }) => {
     "Earpong! is an ear-training app for users to practice their relative pitch recognition. The app generates random sounds for the user to try and recognize. It is based on a famous ear-training exercise used in music colleges. Earpong! is a rather simple vanilla javascript app, one of the first ones that I have developed, but I love it! ";
   const earpongStyled =
     "Click the 'Play sound' button, listen carefully and try to recognize whether the played sound is 'C' or 'G'. Submit your answer by clicking the corresponding sound button. If you're correct, you will be redirected to the live project, if you're wrong, to the source code.";
-  const missCohenSubtitle =
-    "'Miss Cohen' is an e-commerce website that sells mediterranean food. Customers can browse through the shop's products, place their orders and paying with PayPal. Later, they will receive a confirmation email with their order specifications. The seller will receieve an email notifying them about the order and its specifications. This project was built with React, Redux, Typescript, Mongoose, Nodejs, Nodemailer, Passport js, PayPal api, and Material Ui ";
-  const missCohenStyled =
-    "To view the project live, add the Hummus dish to the cart and checkout. To see the source code, add the Shakshuka dish to the cart and checkout";
-
+  const informedPhrasingSubtitle =
+    "Informed Phrasing is my doctoral research project. It delves into the intricate and often contentious relationship between music analysis and performance from an artistic, performative standpoint. With a primary focus on the Phrasing aspect of musical performance, the project explores the points of contact and interactions between Schenkerian analysis, Gestalt psychology, musical performance, and embodied music cognition. Through this exploration, a performative-analytical process emerged, firmly grounded in performance experience, with the aim of stimulating individual creativity and fostering expressivity";
+  const informedPhrasingStyled =
+    "Browse through the chapters of the dissertation by swiping the card left. To view the dissertation website, click either on a title of a chpater, which would open the specific chapter, or the title of the project, which would open its home-page.";
   const gestaltSubtitle = `"Gestalt" is a pedagogical application designed to interactively teach the principles of Gestalt psychology in visual and auditory perception. It presents the Gestalt principles interactively, discusses their limitations, and proposes a holistic body-minf alternative. This app is a checpter of my PhD dissertation, promoting an artistic approach to the relationships between music analysis and performance.`;
   const gestaltStyled =
     "Use the cursor as a bruch to circle a group of dots. To view the app live, circle the blue group. To see the source code, circle the yellow. If you circle both colors, the more prominently circled color will determine the window's destination.";
@@ -83,16 +82,16 @@ const ProjectsStripe = ({ focusedSection, scrollToSection }) => {
           md={6}
           className="project-stripe-grid-item reversed-item"
         >
-          <Shilo />
+          <InformedPhrasing />
         </Grid>
 
         <Grid item xs={12} md={6} className="project-stripe-grid-item">
           <ProjectSpecs
-            letter="S"
-            title="hilo"
-            transform={-43}
-            subtitle={shiloSubtitle}
-            styledText={shiloStyled}
+            letter="P"
+            title="hrasing"
+            transform={-42}
+            subtitle={informedPhrasingSubtitle}
+            styledText={informedPhrasingStyled}
           />
         </Grid>
       </Grid>
@@ -113,7 +112,6 @@ const ProjectsStripe = ({ focusedSection, scrollToSection }) => {
           />
         </Grid>
         <Grid item xs={12} md={6} className="project-stripe-grid-item">
-          {/* <MissCohen /> */}
           <Gestalt />
         </Grid>
       </Grid>
@@ -132,17 +130,38 @@ const ProjectsStripe = ({ focusedSection, scrollToSection }) => {
           md={6}
           className="project-stripe-grid-item reversed-item"
         >
-          <Earpong />
+          <Shilo />
         </Grid>
+
         <Grid item xs={12} md={6} className="project-stripe-grid-item">
           <ProjectSpecs
-            pecs
+            letter="S"
+            title="hilo"
+            transform={-43}
+            subtitle={shiloSubtitle}
+            styledText={shiloStyled}
+          />
+        </Grid>
+      </Grid>
+
+      <Grid
+        container
+        spacing={3}
+        className={
+          isSmallScreen ? "sm-screen-project-container" : "project-container"
+        }
+      >
+        <Grid item xs={12} md={6} className="project-stripe-grid-item">
+          <ProjectSpecs
             letter="E"
             title="arpong!"
             transform={-36}
             subtitle={earpongSubtitle}
             styledText={earpongStyled}
           />
+        </Grid>
+        <Grid item xs={12} md={6} className="project-stripe-grid-item">
+          <Earpong />
         </Grid>
       </Grid>
 
